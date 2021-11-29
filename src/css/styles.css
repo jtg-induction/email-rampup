@@ -1,0 +1,158 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  font-size: 62.5%;
+  font-family: Manrope;
+}
+body {
+  background: #e5e5e5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+
+.create-bg-wave {
+  background: url("../images/create-bg-wave.png") no-repeat bottom;
+  background-size: 100% auto;
+}
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.template {
+  margin-top: 9rem;
+  background-color: #ffffff;
+  padding: 4rem;
+  box-shadow: 0 0 1.1rem 0.7rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.template__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.template__content {
+  margin-top: 4rem;
+}
+.text {
+  max-width: 45rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.text a {
+  text-decoration-line: none;
+}
+
+.divider {
+  display: block;
+  border: 1px solid #06222e;
+  opacity: 0.5;
+  margin: 2rem auto;
+}
+
+.list-item {
+  display: flex;
+  gap: 2rem;
+}
+.list-item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.list-item__heading {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.list-item__details {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+}
+
+.meeting-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 20rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  gap: 1rem;
+  text-decoration-line: none;
+}
+.btn--primary {
+  background: #485dd8;
+  color: #ffffff;
+}
+.btn--secondary {
+  background: #ededed;
+  color: #06222e;
+}
+
+.footer {
+  max-width: 48rem;
+  margin: 0 auto;
+  color: #4f4f4f;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.footer-text {
+  margin-top: 6rem;
+}
+.unsubscribe {
+  display: block;
+  margin: 4rem auto;
+  color: #4f4f4f;
+}
+.socials {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.policies {
+  margin: 12rem 0 6rem;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.policies a {
+  text-decoration-line: none;
+  color: #4f4f4f;
+}
