@@ -21,13 +21,18 @@ a {
 html {
   font-size: 62.5%;
   font-family: Manrope;
-}
-body {
-  background: #e5e5e5;
+  color: #06222e;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+table,
+td,
+tr {
+  border-spacing: 0;
+  border: 0;
+  padding: 0;
 }
 button {
   background: none;
@@ -42,31 +47,18 @@ ul {
   background: url("../images/create-bg-wave.png") no-repeat bottom;
   background-size: 100% auto;
 }
-.container {
-  max-width: 70rem;
-  margin: 0 auto;
-}
 
 .template {
-  margin-top: 9rem;
+  margin: 100px auto;
+  width: 700px;
   background-color: #ffffff;
-  padding: 4rem;
-  box-shadow: 0 0 1.1rem 0.7rem rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-}
-.template__heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-.template__content {
-  margin-top: 4rem;
+  padding: 20px;
+  box-shadow: 0 0 11px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 .text {
-  max-width: 45rem;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 20px;
+  line-height: 30px;
 }
 .text a {
   text-decoration-line: none;
@@ -74,101 +66,71 @@ ul {
 
 .divider {
   display: block;
-  border: 1px solid #06222e;
-  opacity: 0.5;
-  margin: 2rem auto;
+  height: 1px;
+  background-color: #06222e;
+  opacity: 0.2;
+  margin: 20px auto;
 }
 
 .list-item {
-  display: flex;
-}
-.list-item:not(:last-child) {
-  margin-bottom: 4rem;
-}
-.list-item__content {
-  margin-left: 2rem;
+  display: block;
+  margin-bottom: 40px;
 }
 .list-item__heading {
   font-weight: bold;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 16px;
+  line-height: 20px;
 }
 .list-item__details {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: normal;
   word-break: break-all;
 }
 
-.meeting-links {
-  display: flex;
-  margin-bottom: 20rem;
-}
-
 .btn {
-  padding: 1rem;
-  border-radius: 0.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  display: block;
+  width: 186px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 24px;
   text-decoration-line: none;
+  box-sizing: border-box;
+  text-align: center;
 }
 .btn--primary {
-  background: #485dd8;
+  background-color: #485dd8;
   color: #ffffff;
 }
 .btn--secondary {
-  background: #ededed;
+  background-color: #ededed;
   color: #06222e;
-}
-.meeting-links .btn {
-  margin-right: 2rem;
 }
 
 .footer {
-  max-width: 48rem;
+  width: 480px;
   margin: 0 auto;
   color: #4f4f4f;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
-}
-.footer-text {
-  margin-top: 6rem;
 }
 .unsubscribe {
   display: block;
-  margin: 4rem auto;
+  margin: 40px auto;
   color: #4f4f4f;
-}
-.socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .socials a {
-  margin: 0 2rem;
+  margin: 0 20px;
 }
 .policies {
-  margin: 12rem 0 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 120px 0 60px;
 }
 .policies a {
+  margin: 0 20px;
   text-decoration-line: none;
   color: #4f4f4f;
-}
-.policies a {
-  margin: 0 2rem;
-}
-@media screen and (max-width: 768px) {
-  .meeting-links {
-    flex-direction: column;
-  }
-  .meeting-links a {
-    margin-bottom: 2rem;
-  }
 }
