@@ -20,8 +20,6 @@ a {
 }
 html {
   font-size: 62.5%;
-  font-family: Manrope;
-  color: #06222e;
 }
 img {
   max-width: 100%;
@@ -30,9 +28,13 @@ img {
 table,
 td,
 tr {
+  border-collapse: collapse;
   border-spacing: 0;
   border: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 button {
   background: none;
@@ -43,45 +45,41 @@ ul {
   list-style-type: none;
 }
 
-.create-bg-wave {
-  background: url("../images/create-bg-wave.png") no-repeat bottom;
-  background-size: 100% auto;
+.email-bg {
+  background-color: #e5e5e5;
+  width: 100%;
 }
-
 .template {
-  margin: 100px auto;
-  width: 700px;
   background-color: #ffffff;
-  padding: 20px;
   box-shadow: 0 0 11px 7px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+.create-bg {
+  background-image: url("../images/create-bg-wave.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .text {
   font-size: 20px;
   line-height: 30px;
-}
-.text a {
-  text-decoration-line: none;
+  font-family: Manrope;
+  color: #06222e;
 }
 
 .divider {
-  display: block;
-  height: 1px;
   background-color: #06222e;
   opacity: 0.2;
-  margin: 20px auto;
-}
-
-.list-item {
-  display: block;
-  margin-bottom: 40px;
 }
 .list-item__heading {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  font-family: Manrope;
+  color: #06222e;
 }
 .list-item__details {
+  font-family: Manrope;
+  color: #06222e;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -89,47 +87,39 @@ ul {
 }
 
 .btn {
-  display: block;
-  width: 186px;
-  padding: 10px;
   border-radius: 6px;
+}
+.btn--font {
+  font-family: Manrope;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  text-decoration-line: none;
-  box-sizing: border-box;
-  text-align: center;
 }
 .btn--primary {
   background-color: #485dd8;
-  color: #ffffff;
 }
 .btn--secondary {
   background-color: #ededed;
-  color: #06222e;
 }
 
-.footer {
-  width: 480px;
-  margin: 0 auto;
+.footer-text {
+  font-family: Manrope;
   color: #4f4f4f;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
 }
 .unsubscribe {
-  display: block;
-  margin: 40px auto;
+  font-family: Manrope;
   color: #4f4f4f;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: underline;
 }
-.socials a {
-  margin: 0 20px;
-}
-.policies {
-  display: block;
-  margin: 120px 0 60px;
-}
-.policies a {
-  margin: 0 20px;
-  text-decoration-line: none;
+.policy {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
   color: #4f4f4f;
+  font-size: 12px;
+  line-height: 14px;
 }

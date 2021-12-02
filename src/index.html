@@ -5,161 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Email Sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link
+    <link
       rel="stylesheet"
       type="text/css"
       media="screen"
       href="css/styles.css"
-    /> -->
-    <style type="text/css">
-      html,
-      body,
-      div,
-      span,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      ul,
-      a {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-      }
-      html {
-        font-size: 62.5%;
-        font-family: Manrope;
-        color: #06222e;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      table,
-      td,
-      tr {
-        border-collapse: collapse;
-        border-spacing: 0;
-        border: 0;
-        padding: 0;
-      }
-      a {
-        text-decoration: none;
-      }
-      button {
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-      ul {
-        list-style-type: none;
-      }
-
-      .create-bg-wave {
-        background: url("../images/create-bg-wave.png") no-repeat bottom;
-        background-size: 100% auto;
-      }
-
-      .template {
-        /* margin: 100px auto; */
-        width: 700px;
-        background-color: #ffffff;
-        box-shadow: 0 0 11px 7px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-      }
-      .text {
-        font-size: 20px;
-        line-height: 30px;
-      }
-      .text a {
-        /* text-decoration-line: none; */
-      }
-
-      .divider {
-        display: block;
-        height: 1px;
-        background-color: #06222e;
-        opacity: 0.2;
-        /* margin: 20px auto; */
-      }
-
-      .list-item {
-        display: block;
-        /* margin-bottom: 40px; */
-      }
-      .list-item__heading {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-      }
-      .list-item__details {
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: normal;
-        word-break: break-all;
-      }
-
-      .btn {
-        display: block;
-        border-radius: 6px;
-        text-align: center;
-      }
-      .btn--font-1 {
-        font-size: 16px;
-        line-height: 24px;
-        color: #06222e;
-      }
-      .btn--font-2 {
-        font-size: 16px;
-        line-height: 24px;
-        color: #ffffff;
-      }
-      .btn--primary {
-        background-color: #485dd8;
-      }
-      .btn--secondary {
-        background-color: #ededed;
-      }
-
-      .footer {
-        width: 480px;
-        /* margin: 0 auto; */
-        color: #4f4f4f;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-      }
-      .unsubscribe {
-        display: block;
-        /* margin: 40px auto; */
-        color: #4f4f4f;
-      }
-      .socials a {
-        /* margin: 0 20px; */
-      }
-      .policies {
-        display: block;
-        /* margin: 120px 0 60px; */
-      }
-      .policies a {
-        /* margin: 0 20px; */
-        /* text-decoration-line: none; */
-        color: #4f4f4f;
-      }
-    </style>
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Manrope"
     />
   </head>
   <body>
-    <table style="background-color: #e5e5e5; width: 100%">
+    <table class="email-bg">
       <tr>
         <td>
           <table>
@@ -171,11 +29,10 @@
       </tr>
       <tr>
         <td>
-          <table>
+          <table align="center">
             <tr>
-              <td width="100"></td>
-              <td>
-                <table class="template create-bg-wave">
+              <td width="700">
+                <table class="template create-bg">
                   <tr>
                     <td width="700" height="20"></td>
                   </tr>
@@ -184,7 +41,7 @@
                       <table>
                         <tr>
                           <td width="20"></td>
-                          <td width="660">
+                          <td>
                             <table>
                               <tr>
                                 <td>
@@ -245,7 +102,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td class="divider"></td>
+                                <td height="1" width="660" class="divider"></td>
                               </tr>
                               <tr>
                                 <td>
@@ -259,9 +116,10 @@
                               <tr>
                                 <td>
                                   <table>
-                                    <tr class="list-item">
+                                    <tr>
                                       <td
-                                        style="vertical-align: top; width: 40px"
+                                        width="40"
+                                        style="vertical-align: top"
                                       >
                                         <img
                                           src="images/calendar.png"
@@ -269,14 +127,20 @@
                                         />
                                       </td>
                                       <td width="20"></td>
-                                      <td>
-                                        <h3 class="list-item__heading">
-                                          Date & Time
-                                        </h3>
-                                        <p class="list-item__details">
-                                          Friday, 24 August 2021 | 8:00PM -
-                                          8:30PM
-                                        </p>
+                                      <td width="600">
+                                        <table>
+                                          <tr>
+                                            <td class="list-item__heading">
+                                              Date & Time
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="list-item__details">
+                                              Friday, 24 August 2021 | 8:00PM -
+                                              8:30PM
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
                                     </tr>
                                     <tr>
@@ -288,9 +152,10 @@
                                         </table>
                                       </td>
                                     </tr>
-                                    <tr class="list-item">
+                                    <tr>
                                       <td
-                                        style="vertical-align: top; width: 40px"
+                                        width="40"
+                                        style="vertical-align: top"
                                       >
                                         <img
                                           src="images/video.png"
@@ -298,13 +163,19 @@
                                         />
                                       </td>
                                       <td width="20"></td>
-                                      <td>
-                                        <h3 class="list-item__heading">
-                                          Session Link
-                                        </h3>
-                                        <p class="list-item__details">
-                                          http://mentorcloud.moxtra.com
-                                        </p>
+                                      <td width="600">
+                                        <table>
+                                          <tr>
+                                            <td class="list-item__heading">
+                                              Session Link
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="list-item__details">
+                                              http://mentorcloud.moxtra.com
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
                                     </tr>
                                     <tr>
@@ -316,9 +187,10 @@
                                         </table>
                                       </td>
                                     </tr>
-                                    <tr class="list-item">
+                                    <tr>
                                       <td
-                                        style="vertical-align: top; width: 40px"
+                                        width="40"
+                                        style="vertical-align: top"
                                       >
                                         <img
                                           src="images/users.png"
@@ -326,11 +198,19 @@
                                         />
                                       </td>
                                       <td width="20"></td>
-                                      <td>
-                                        <h3 class="list-item__heading">
-                                          No.of Invitees
-                                        </h3>
-                                        <p class="list-item__details">04</p>
+                                      <td width="600">
+                                        <table>
+                                          <tr>
+                                            <td class="list-item__heading">
+                                              No.of Invitees
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="list-item__details">
+                                              04
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
                                     </tr>
                                     <tr>
@@ -342,20 +222,27 @@
                                         </table>
                                       </td>
                                     </tr>
-                                    <tr class="list-item">
+                                    <tr>
                                       <td
-                                        style="vertical-align: top; width: 40px"
+                                        width="40"
+                                        style="vertical-align: top"
                                       >
                                         <img src="images/lock.png" alt="lock" />
                                       </td>
                                       <td width="20"></td>
-                                      <td>
-                                        <h3 class="list-item__heading">
-                                          Session Type
-                                        </h3>
-                                        <p class="list-item__details">
-                                          Private Mentoring Session
-                                        </p>
+                                      <td width="600">
+                                        <table>
+                                          <tr>
+                                            <td class="list-item__heading">
+                                              Session Type
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="list-item__details">
+                                              Private Mentoring Session
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
                                     </tr>
                                     <tr>
@@ -367,9 +254,10 @@
                                         </table>
                                       </td>
                                     </tr>
-                                    <tr class="list-item">
+                                    <tr>
                                       <td
-                                        style="vertical-align: top; width: 40px"
+                                        width="40"
+                                        style="vertical-align: top"
                                       >
                                         <img
                                           src="images/file-text.png"
@@ -377,13 +265,19 @@
                                         />
                                       </td>
                                       <td width="20"></td>
-                                      <td>
-                                        <h3 class="list-item__heading">
-                                          Description
-                                        </h3>
-                                        <p class="list-item__details">
-                                          Test Meeting
-                                        </p>
+                                      <td width="600">
+                                        <table>
+                                          <tr>
+                                            <td class="list-item__heading">
+                                              Description
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="list-item__details">
+                                              Test Meeting
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
                                     </tr>
                                   </table>
@@ -399,7 +293,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td class="divider"></td>
+                                <td height="1" width="660" class="divider"></td>
                               </tr>
                               <tr>
                                 <td>
@@ -415,88 +309,124 @@
                                   <table>
                                     <tr>
                                       <td>
-                                        <a href="abc.html"></a>
-                                          <table
-                                            class="btn btn--secondary"
-                                            width="170"
-                                          >
-                                            <tr>
-                                              <td>
-                                                <table>
-                                                  <tr>
-                                                    <td height="10"></td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td width="10"></td>
-                                              <td>
-                                                <img
-                                                  style="vertical-align: middle"
-                                                  src="images/Union.png"
-                                                  alt="calendar"
-                                                />
-                                              </td>
-                                              <td width="10"></td>
-                                              <td class="btn--font-1">
-                                                Add to Calendar
-                                              </td>
-                                              <td width="10"></td>
-                                            </tr>
-                                            <tr>
-                                              <td>
-                                                <table>
-                                                  <tr>
-                                                    <td height="10"></td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </a>
+                                        <table class="btn btn--secondary">
+                                          <tr>
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td
+                                                    width="180"
+                                                    height="10"
+                                                  ></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td width="10"></td>
+                                                  <td width="30">
+                                                    <img
+                                                      style="
+                                                        vertical-align: middle;
+                                                      "
+                                                      src="images/Union.png"
+                                                      alt="calendar"
+                                                    />
+                                                  </td>
+                                                  <td
+                                                    align="center"
+                                                    width="130"
+                                                  >
+                                                    <a
+                                                      class="btn--font"
+                                                      style="
+                                                        color: #06222e;
+                                                        vertical-align: middle;
+                                                      "
+                                                      href="abc.html"
+                                                    >
+                                                      Add to Calendar</a
+                                                    >
+                                                  </td>
+                                                  <td width="10"></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td
+                                                    width="180"
+                                                    height="10"
+                                                  ></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
-                                      <td width="20">&nbsp;</td>
+                                      <td width="20"></td>
                                       <td>
-                                        <a href="abc.html">
-                                          <table
-                                            class="btn btn--primary"
-                                            width="180"
-                                          >
-                                            <tr>
-                                              <td>
-                                                <table>
-                                                  <tr>
-                                                    <td height="10"></td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td width="10"></td>
-                                              <td class="btn--font-2">
-                                                View Session Details
-                                              </td>
-                                              <td width="10"></td>
-                                            </tr>
-                                            <tr>
-                                              <td>
-                                                <table>
-                                                  <tr>
-                                                    <td height="10"></td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </a>
+                                        <table class="btn btn--primary">
+                                          <tr>
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td
+                                                    width="180"
+                                                    height="10"
+                                                  ></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td width="10"></td>
+                                                  <td
+                                                    align="center"
+                                                    width="160"
+                                                  >
+                                                    <a
+                                                      class="btn--font"
+                                                      style="
+                                                        color: #ffffff;
+                                                        vertical-align: middle;
+                                                      "
+                                                      href="abc.html"
+                                                    >
+                                                      View Session Details</a
+                                                    >
+                                                  </td>
+                                                  <td width="10"></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td
+                                                    width="180"
+                                                    height="10"
+                                                  ></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
                                     </tr>
                                   </table>
                                 </td>
-                              </tr>
-                              <tr>
-                                <td width="700" height="20"></td>
                               </tr>
                             </table>
                           </td>
@@ -505,12 +435,20 @@
                       </table>
                     </td>
                   </tr>
+                  <!--[if (mso)|(IE)]>
+                    <tr>
+                      <td>
+                        <img src="images/create-bg-wave.png" />
+                      </td>
+                    </tr>
+                  <![endif]-->
+                  <!--[if !mso]><!-->
                   <tr>
-                    <td width="700" height="20"></td>
+                    <td width="700" height="150"></td>
                   </tr>
+                  <!--<![endif]-->
                 </table>
               </td>
-              <td width="100"></td>
             </tr>
           </table>
         </td>
@@ -526,52 +464,78 @@
       </tr>
       <tr>
         <td>
-          <table class="footer">
+          <table align="center">
             <tr>
-              <td class="footer-text">
-                You received this mail because you are subscribed to Mentorcloud
-                service’s status notification
-              </td>
-            </tr>
-            <tr>
-              <td><a href="abc.html" class="unsubscribe">Unsubscribe</a></td>
-            </tr>
-            <tr class="socials">
-              <td>
+              <td align="center" width="700">
                 <table>
                   <tr>
-                    <td width="152.5">&nbsp;</td>
-                    <td>
-                      <a href="abc.html">
-                        <img src="images/Linkedin.png" alt="LinkedIn" />
-                      </a>
+                    <td align="center" width="450" class="footer-text">
+                      You received this mail because you are subscribed to
+                      Mentorcloud service’s status notification
                     </td>
-                    <td>
-                      <a href="abc.html">
-                        <img src="images/Facebook.png" alt="Facebook" />
-                      </a>
-                    </td>
-                    <td>
-                      <a href="abc.html">
-                        <img src="images/Twitter.png" alt="Twitter" />
-                      </a>
-                    </td>
-                    <td width="152.5">&nbsp;</td>
                   </tr>
-                </table>
-              </td>
-            </tr>
-            <tr class="policies">
-              <td>
-                <table>
                   <tr>
-                    <td width="7.5">&nbsp;</td>
-                    <td><a href="abc.html">Terms of use</a></td>
-                    <td><a href="abc.html">Privacy Policies</a></td>
-                    <td>
-                      <a href="abc.html">Mentorcloud, 2020</a>
+                    <td height="40"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <a class="unsubscribe" href="abc.html">Unsubscribe</a>
                     </td>
-                    <td width="7.5">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="40"></td>
+                  </tr>
+                  <tr class="socials">
+                    <td align="center">
+                      <table>
+                        <tr>
+                          <td align="center" width="60">
+                            <a href="abc.html">
+                              <img src="images/Linkedin.png" alt="LinkedIn" />
+                            </a>
+                          </td>
+                          <td align="center" width="60">
+                            <a href="abc.html">
+                              <img src="images/Facebook.png" alt="Facebook" />
+                            </a>
+                          </td>
+                          <td align="center" width="60">
+                            <a href="abc.html">
+                              <img src="images/Twitter.png" alt="Twitter" />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="100"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <table>
+                        <tr>
+                          <td width="150" align="center" class="policy">
+                            <a style="color: #4f4f4f" href="abc.html"
+                              >Terms of use</a
+                            >
+                          </td>
+                          <td width="150" align="center" class="policy">
+                            <a style="color: #4f4f4f" href="abc.html"
+                              >Privacy Policies</a
+                            >
+                          </td>
+                          <td width="150" align="center" class="policy">
+                            <a style="color: #4f4f4f" href="abc.html"
+                              >Mentorcloud, 2020</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="40"></td>
                   </tr>
                 </table>
               </td>
